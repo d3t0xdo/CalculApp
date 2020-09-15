@@ -1,2 +1,0 @@
-# CalculApp
-Calculadora full
