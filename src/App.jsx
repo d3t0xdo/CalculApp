@@ -15,14 +15,14 @@ const App = () => {
     return (
     <main className='react-calculator'>
         <Result value={"15"} />
-        <Numbers onClickNumbers={number => clickHandlerFunction(number)}/>
+        <Numbers onClickNumber={clickHandlerFunction}/>
         <Functions 
-            onContentClear={content => console.log(content)}
-            onDelete={deletes => console.log(deletes)}
+            onContentClear={clickHandlerFunction}
+            onDelete={clickHandlerFunction}
         />
         <MathOperations 
-            onClickOperation={operation => console.log(operation)} 
-            onClickEqual={equal => console.log(equal)} />
+            onClickOperation={clickHandlerFunction} 
+            onClickEqual={clickHandlerFunction} />
     </main>)
 }
 
