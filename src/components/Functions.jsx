@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 const Functions = ({ onContentClear, onDelete}) => (
     <section className="functions">
-        <Button text="CE" clickHandler={onContentClear}/>
+        <Button type="button-long-text" text="CE" clickHandler={onContentClear}/>
         <Button text="C" clickHandler={onDelete}/>
     </section>
 )
